@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lama's Services - Money Methods & Exploits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a3a3f',
+                        secondary: '#2a4b50',
+                        accent: '#3a9b8f',
+                        light: '#e0f2f1',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a3a3f 0%, #2a4b50 50%, #3a9b8f 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .discord-btn:hover {
+            background-color: #5865F2 !important;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #3a9b8f;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Navbar -->
+    <header class="gradient-bg sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-kiwi-bird text-3xl text-accent"></i>
+                    <h1 class="text-2xl font-bold">Lama's <span class="text-accent">Services</span></h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-light hover:text-accent transition">Home</a>
+                    <a href="#methods" class="nav-link text-light hover:text-accent transition">Methods</a>
+                    <a href="#exploits" class="nav-link text-light hover:text-accent transition">Exploits</a>
+                    <a href="#serials" class="nav-link text-light hover:text-accent transition">Serials</a>
+                    <a href="#testimonials" class="nav-link text-light hover:text-accent transition">Reviews</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="https://discord.gg/ReNmwxbe2M" target="_blank" class="discord-btn bg-accent px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-opacity-90 transition">
+                        <i class="fab fa-discord"></i>
+                        <span>Join Discord</span>
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="block px-3 py-2 rounded-md hover:bg-secondary">Home</a>
+                    <a href="#methods" class="block px-3 py-2 rounded-md hover:bg-secondary">Methods</a>
+                    <a href="#exploits" class="block px-3 py-2 rounded-md hover:bg-secondary">Exploits</a>
+                    <a href="#serials" class="block px-3 py-2 rounded-md hover:bg-secondary">Serials</a>
+                    <a href="#testimonials" class="block px-3 py-2 rounded-md hover:bg-secondary">Reviews</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Premium <span class="text-accent">Money Methods</span> & <span class="text-accent">Exploits</span></h2>
+                <p class="text-xl text-light mb-8">Get access to exclusive money-making methods, software exploits, and premium serial keys to boost your income.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#methods" class="bg-accent hover:bg-opacity-90 text-white px-6 py-3 rounded-md text-center font-medium transition">Browse Methods</a>
+                    <a href="https://discord.gg/ReNmwxbe2M" target="_blank" rel="noopener noreferrer" class="border border-accent text-accent hover:bg-accent hover:bg-opacity-10 px-6 py-3 rounded-md text-center font-medium transition">Join Our Discord</a>
+
+
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-secondary rounded-full flex items-center justify-center">
+                        <i class="fas fa-lock-open text-8xl text-accent"></i>
+                    </div>
+                    <div class="absolute -top-5 -right-5 bg-primary p-4 rounded-lg shadow-lg">
+                        <p class="text-sm">Trusted by <span class="text-accent font-bold">500+</span> members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-primary py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Why Choose <span class="text-accent">Lama's Services</span>?</h2>
+                <p class="text-light max-w-2xl mx-auto">We provide high-quality, tested methods and exploits with detailed guides and support.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Secure & Private</h3>
+                    <p class="text-light">All our methods and exploits are tested for security and privacy. Your safety is our priority.</p>
+                </div>
+                
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Detailed Guides</h3>
+                    <p class="text-light">Step-by-step instructions with screenshots and video tutorials included with every purchase.</p>
+                </div>
+                
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                    <p class="text-light">Our team is available on Discord to help you with any questions or issues you might have.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods Section -->
+    <section id="methods" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Money <span class="text-accent">Making Methods</span></h2>
+                <p class="text-light max-w-2xl mx-auto">Premium methods that actually work, with proof of payment included.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Method 1 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg product-card transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-dollar-sign text-6xl text-white opacity-30"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">E-commerce Method</h3>
+                            <span class="bg-accent text-xs text-white px-2 py-1 rounded">NEW</span>
+                        </div>
+                        <p class="text-light mb-4">Make $500-$1000 daily with this Shopify dropshipping method. Includes supplier list
+                            and ad templates.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-accent">$49.99</span>
+                            <button onclick="window.location.href='checkout.html'"
+                                class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Method 2 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg product-card transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-coins text-6xl text-white opacity-30"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Crypto Arbitrage</h3>
+                            <span class="bg-green-500 text-xs text-white px-2 py-1 rounded">BESTSELLER</span>
+                        </div>
+                        <p class="text-light mb-4">Low-risk crypto arbitrage method making 5-10% daily returns. Includes bot setup and exchange list.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-accent">$79.99</span>
+                            <button onclick="window.location.href='checkout.html'"
+                                class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Method 3 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg product-card transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-6xl text-white opacity-30"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CPA Marketing</h3>
+                        <p class="text-light mb-4">Make $100-$300 daily with this CPA marketing method. Includes approved networks and ad copies.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-accent">$39.99</span>
+                            <button onclick="window.location.href='checkout.html'"
+                                class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://discord.gg/ReNmwxbe2M" class="inline-block border border-accent text-accent hover:bg-accent hover:bg-opacity-10 px-6 py-3 rounded-md font-medium transition">View All Methods</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exploits Section -->
+    <section id="exploits" class="py-16 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Premium <span class="text-accent">Software Exploits</span></h2>
+                <p class="text-light max-w-2xl mx-auto">Tested and working exploits for various platforms and software.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Exploit 1 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg product-card transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-code text-6xl text-white opacity-30"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Windows 11 Pro Exploit</h3>
+                        <p class="text-light mb-4">Bypass Windows 11 Pro activation with this permanent exploit. Works on all versions.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-accent">$29.99</span>
+                            <button onclick="window.location.href='checkout.html'"
+                                class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Exploit 2 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg product-card transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-gamepad text-6xl text-white opacity-30"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Game Currency Exploit</h3>
+                        <p class="text-light mb-4">Generate unlimited in-game currency for popular games. Includes video tutorial.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-accent">$49.99</span>
+                            <button onclick="window.location.href='checkout.html'"
+                                class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Exploit 3 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg product-card transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-video text-6xl text-white opacity-30"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Streaming Service Bypass</h3>
+                            <span class="bg-red-500 text-xs text-white px-2 py-1 rounded">HOT</span>
+                        </div>
+                        <p class="text-light mb-4">Access premium streaming services without paying. Works on Netflix, Hulu, Disney+.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-accent">$34.99</span>
+                            <button onclick="window.location.href='checkout.html'"
+                                class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://discord.gg/ReNmwxbe2M" class="inline-block border border-accent text-accent hover:bg-accent hover:bg-opacity-10 px-6 py-3 rounded-md font-medium transition">View All Exploits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serials Section -->
+    <section id="serials" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Premium <span class="text-accent">Serial Keys</span></h2>
+                <p class="text-light max-w-2xl mx-auto">Genuine serial keys for popular software at a fraction of the retail price.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-secondary rounded-lg overflow-hidden">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Product</th>
+                            <th class="py-3 px-4 text-left">Version</th>
+                            <th class="py-3 px-4 text-left">Platform</th>
+                            <th class="py-3 px-4 text-left">Price</th>
+                            <th class="py-3 px-4 text-left">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    <tr class="border-b border-gray-700 hover:bg-gray-800 transition">
+        <td class="py-4 px-4">Adobe Photoshop</td>
+        <td class="py-4 px-4">2023</td>
+        <td class="py-4 px-4">Windows/Mac</td>
+        <td class="py-4 px-4 text-accent font-bold">$19.99</td>
+        <td class="py-4 px-4">
+            <button onclick="window.location.href='checkout.html'"
+                class="bg-accent hover:bg-opacity-90 text-white px-3 py-1 rounded-md text-sm transition">
+                Buy Now
+            </button>
+        </td>
+    </tr>
+                        <tr class="border-b border-gray-700 hover:bg-gray-800 transition">
+    <td class="py-4 px-4">Microsoft Office</td>
+    <td class="py-4 px-4">2021 Pro Plus</td>
+    <td class="py-4 px-4">Windows/Mac</td>
+    <td class="py-4 px-4 text-accent font-bold">$24.99</td>
+    <td class="py-4 px-4">
+        <button onclick="window.location.href='checkout.html'" class="bg-accent hover:bg-opacity-90 text-white px-3 py-1 rounded-md text-sm transition">
+            Buy Now
+        </button>
+    </td>
+</tr>
+
+                        <tr class="border-b border-gray-700 hover:bg-gray-800 transition">
+                            <td class="py-4 px-4">Windows 11 Pro</td>
+                            <td class="py-4 px-4">22H2</td>
+                            <td class="py-4 px-4">Windows</td>
+                            <td class="py-4 px-4 text-accent font-bold">$14.99</td>
+                            <td class="py-4 px-4"> <button onclick="window.location.href='checkout.html'"
+                class="bg-accent hover:bg-opacity-90 text-white px-3 py-1 rounded-md text-sm transition">
+                Buy Now
+            </button>
+        </td>
+                       <tr class="border-b border-gray-700 hover:bg-gray-800 transition">
+    <td class="py-4 px-4">NordVPN</td>
+    <td class="py-4 px-4">Premium</td>
+    <td class="py-4 px-4">All Platforms</td>
+    <td class="py-4 px-4 text-accent font-bold">$9.99</td>
+    <td class="py-4 px-4">
+        <button onclick="window.location.href='checkout.html'" class="bg-accent hover:bg-opacity-90 text-white px-3 py-1 rounded-md text-sm transition">
+            Buy Now
+        </button>
+    </td>
+</tr>
+
+                        <tr class="hover:bg-gray-800 transition">
+    <td class="py-4 px-4">Malwarebytes</td>
+    <td class="py-4 px-4">Premium</td>
+    <td class="py-4 px-4">Windows/Mac</td>
+    <td class="py-4 px-4 text-accent font-bold">$12.99</td>
+    <td class="py-4 px-4">
+        <button onclick="window.location.href='checkout.html'" class="bg-accent hover:bg-opacity-90 text-white px-3 py-1 rounded-md text-sm transition">
+            Buy Now
+        </button>
+    </td>
+</tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://discord.gg/ReNmwxbe2M" class="inline-block border border-accent text-accent hover:bg-accent hover:bg-opacity-10 px-6 py-3 rounded-md font-medium transition">View All Serials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Customer <span class="text-accent">Reviews</span></h2>
+                <p class="text-light max-w-2xl mx-auto">Don't just take our word for it - hear what our customers say.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-bold mr-4">JD</div>
+                        <div>
+                            <h4 class="font-bold">John D.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-light">"The e-commerce method worked exactly as described. Made $800 in my first week! Support on Discord is super helpful too."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-bold mr-4">SM</div>
+                        <div>
+                            <h4 class="font-bold">Sarah M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-light">"Bought the Windows 11 exploit and it worked perfectly. Saved me $200 on a legit license. Will definitely buy again!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-bold mr-4">TK</div>
+                        <div>
+                            <h4 class="font-bold">Tom K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-light">"The crypto arbitrage method is legit. Making consistent 7-8% daily returns. Only complaint is I wish I found this sooner!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently <span class="text-accent">Asked Questions</span></h2>
+                <p class="text-light max-w-2xl mx-auto">Got questions? We've got answers.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-700 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium">Are these methods legal?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-light">All our methods operate in legal gray areas. We don't provide anything that would be considered outright illegal, but we recommend you research your local laws before proceeding with any method.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-700 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium">How do I receive my purchase?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-light">After payment is confirmed, you'll receive an email with download links and instructions. You'll also get access to our private Discord channel for support.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border-b border-gray-700 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium">Do you offer refunds?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-light">Due to the digital nature of our products, we don't offer refunds. However, if you're having trouble with any method, our support team will work with you to get it working.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-4 border-b border-gray-700 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium">Why should I use Lama's Services?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-light">We at Lama's Services strive for the highest quality products to insure happy customers. Moreover, our after-sales Support takes time for the client if there would be issues with the product. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start <span class="text-accent">Making Money</span>?</h2>
+            <p class="text-xl text-light mb-8 max-w-2xl mx-auto">Join 500+ members who are already profiting from our premium methods and exploits.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#methods" class="bg-white hover:bg-opacity-90 text-primary px-8 py-3 rounded-md font-bold transition">Browse Products</a>
+                <a href="https://discord.gg/ReNmwxbe2M" target="_blank" class="border border-white text-white hover:bg-white hover:bg-opacity-10 px-8 py-3 rounded-md font-bold transition">Join Our Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-kiwi-bird text-2xl text-accent"></i>
+                        <h3 class="text-xl font-bold">Lama's Services</h3>
+                    </div>
+                    <p class="text-light mb-4">Premium money methods, software exploits, and serial keys.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/ReNmwxbe2M" class="text-light hover:text-accent transition"><i class="fab fa-discord text-xl"></i></a>
+                        <a href="https://t.me/+HRdlysNBMpNjY2Zk" class="text-light hover:text-accent transition"><i class="fab fa-telegram text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#methods" class="text-light hover:text-accent transition">Money Methods</a></li>
+                        <li><a href="#exploits" class="text-light hover:text-accent transition">Software Exploits</a></li>
+                        <li><a href="#serials" class="text-light hover:text-accent transition">Serial Keys</a></li>
+                        <li><a href="https://discord.gg/ReNmwxbe2M" class="text-light hover:text-accent transition">New Releases</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#faq" class="text-light hover:text-accent transition">FAQ</a></li>
+                        <li><a href="contact.html" class="text-light hover:text-accent transition">Contact Us</a></li>
+                        <li><a href="terms.html" class="text-light hover:text-accent transition">Terms of Service</a></li>
+                        <li><a href="privacy.html" class="text-light hover:text-accent transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-light mb-4">Subscribe to get updates on new methods and discounts.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none w-full">
+                        <button type="submit" class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-r-md transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-light">
+                <p>&copy; 2023 Lama's Services. All rights reserved.</p>
+                <p class="text-xs mt-2">Disclaimer: Lama's Services does not condone illegal activity. All methods are for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-accent hover:bg-opacity-90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // FAQ toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
