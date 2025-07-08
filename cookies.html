@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy | Lama's Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0a3d62;
+            --secondary-color: #079992;
+            --accent-color: #38ada9;
+            --light-color: #f5f6fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+        
+        .cookie-banner {
+            animation: slideUp 0.5s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .cookie-icon {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-laptop-code text-3xl text-white"></i>
+                    <h1 class="text-2xl font-bold">Lama's Services</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-gray-200 transition">Home</a>
+                    <a href="#" class="hover:text-gray-200 transition">Products</a>
+                    <a href="#" class="hover:text-gray-200 transition">About</a>
+                    <a href="#" class="hover:text-gray-200 transition">Contact</a>
+                </nav>
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+            <div class="text-center mb-10">
+                <div class="cookie-icon inline-block mb-4">
+                    <i class="fas fa-cookie-bite text-5xl text-[var(--accent-color)]"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-bold text-[var(--primary-color)] mb-2">Cookie Policy</h1>
+                <p class="text-gray-600">Last updated: June 2023</p>
+            </div>
+            
+            <div class="space-y-8">
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">1. Introduction</h2>
+                    <p class="text-gray-700">Welcome to Lama's Services ("we", "our", or "us"). We are committed to protecting your privacy and being transparent about how we collect and use data through cookies and similar technologies on our website.</p>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">2. What Are Cookies?</h2>
+                    <p class="text-gray-700">Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the website owners.</p>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">3. How We Use Cookies</h2>
+                    <p class="text-gray-700 mb-4">We use cookies for the following purposes:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                        <li><strong>Essential Cookies:</strong> Necessary for the website to function properly (e.g., shopping cart functionality)</li>
+                        <li><strong>Performance Cookies:</strong> Help us understand how visitors interact with our website</li>
+                        <li><strong>Functional Cookies:</strong> Enable enhanced functionality and personalization</li>
+                        <li><strong>Marketing Cookies:</strong> Used to track visitors across websites to display relevant ads</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">4. Types of Cookies We Use</h2>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                            <thead class="bg-[var(--primary-color)] text-white">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Cookie Name</th>
+                                    <th class="py-3 px-4 text-left">Purpose</th>
+                                    <th class="py-3 px-4 text-left">Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">session_id</td>
+                                    <td class="py-3 px-4">Maintain user session</td>
+                                    <td class="py-3 px-4">Session</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4">cart_items</td>
+                                    <td class="py-3 px-4">Store shopping cart contents</td>
+                                    <td class="py-3 px-4">30 days</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">_ga</td>
+                                    <td class="py-3 px-4">Google Analytics</td>
+                                    <td class="py-3 px-4">2 years</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">5. Managing Cookies</h2>
+                    <p class="text-gray-700 mb-4">You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit our site and some services and functionalities may not work.</p>
+                    <div class="bg-blue-50 border-l-4 border-[var(--accent-color)] p-4">
+                        <p class="text-gray-700"><strong>Browser Settings:</strong> Most web browsers allow some control of most cookies through the browser settings. To learn more about cookies, including how to see what cookies have been set and how to manage and delete them, visit <a href="https://www.aboutcookies.org/" class="text-[var(--accent-color)] hover:underline" target="_blank">www.aboutcookies.org</a>.</p>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">6. Changes to This Policy</h2>
+                    <p class="text-gray-700">We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to periodically review this page for the latest information on our cookie practices.</p>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[var(--primary-color)] mb-3">7. Contact Us</h2>
+                    <p class="text-gray-700">If you have any questions about our use of cookies or other technologies, please contact us at:</p>
+                    <div class="mt-4 flex items-center space-x-4">
+                        <i class="fas fa-envelope text-[var(--accent-color)]"></i>
+                        <span>privacy@lamaservices.com</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 px-6 py-4 hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0 md:mr-6">
+                <p class="text-gray-700">We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies as described in our <a href="#" class="text-[var(--accent-color)] hover:underline">Cookie Policy</a>.</p>
+            </div>
+            <div class="flex space-x-3">
+                <button id="acceptCookies" class="px-4 py-2 bg-[var(--accent-color)] text-white rounded-lg hover:bg-[var(--secondary-color)] transition">Accept All</button>
+                <button id="rejectCookies" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">Reject Non-Essential</button>
+                <button id="customizeCookies" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                        <span class="text-xl font-bold">Lama's Services</span>
+                    </div>
+                    <p class="text-gray-200">Digital products for your business needs.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-200 hover:text-white transition">Home</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition">Products</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-200 hover:text-white transition">Terms</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition">Privacy</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <h3 class="text-lg font-semibold mb-3">Connect</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-200 hover:text-white transition text-xl"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-200 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-200 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-200 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-300">
+                <p>&copy; 2023 Lama's Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cookie Consent Banner Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = document.getElementById('cookieConsent');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const rejectCookies = document.getElementById('rejectCookies');
+            const customizeCookies = document.getElementById('customizeCookies');
+            
+            // Check if user has already made a choice
+            if (!localStorage.getItem('cookieConsent')) {
+                setTimeout(() => {
+                    cookieConsent.classList.remove('hidden');
+                }, 1000);
+            }
+            
+            // Handle accept button
+            acceptCookies.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieConsent.classList.add('hidden');
+                // Here you would typically set all cookies
+            });
+            
+            // Handle reject button
+            rejectCookies.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'rejected');
+                cookieConsent.classList.add('hidden');
+                // Here you would typically only set essential cookies
+            });
+            
+            // Handle customize button
+            customizeCookies.addEventListener('click', function() {
+                alert('Custom cookie settings would open here in a production environment.');
+                // In a real implementation, this would open a modal with cookie categories
+            });
+            
+            // Mobile menu toggle (bonus functionality)
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            mobileMenuButton.addEventListener('click', function() {
+                alert('Mobile menu would open here in a production environment.');
+                // In a real implementation, this would toggle a mobile menu
+            });
+        });
+    </script>
+</body>
+</html>
